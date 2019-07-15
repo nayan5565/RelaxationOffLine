@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "206036641649",
+    "firebase_url": "https://relaxationmeditaion.firebaseio.com",
+    "project_id": "relaxationmeditaion",
+    "storage_bucket": "relaxationmeditaion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206036641649:android:3a4bb94d5ee2e384",
+        "android_client_info": {
+          "package_name": "com.swapnotech.relaxation.meditation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206036641649-qgmc95gc1c9jab6f1pjk8oa9oti6hgqs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.swapnotech.relaxation.meditation",
+            "certificate_hash": "2cb20698b6e94894f3f9cee654dfc0025e13eedf"
+          }
+        },
+        {
+          "client_id": "206036641649-jlg50v86d72np96d6ag619nqt7oh81fg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLMY7cYc8Yoy1YtIXiKDW0999C5RP6KoA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206036641649-jlg50v86d72np96d6ag619nqt7oh81fg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

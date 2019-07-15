@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/mnuHome"
+            android:title="Home"
+            android:visible="false" />
+        <item
+            android:id="@+id/mnuMusic"
+            android:icon="@drawable/product_icon_white"
+            android:title="Relax" />
+        <item
+            android:id="@+id/mnuWallpaper"
+            android:title="Wallpaper" />
+
+        <item
+            android:id="@+id/mnuCategory"
+            android:icon="@drawable/product_icon_white"
+            android:title="Categoría"
+            android:visible="false" />
+
+        <item
+
+            android:id="@+id/mnuFav"
+            android:icon="@drawable/delivery_icon_white"
+            android:title="Pedido"
+            android:visible="false" />
+        <item
+            android:id="@+id/mnuAsk"
+            android:title="Contact" />
+        <item
+            android:id="@+id/mnuProfile"
+            android:icon="@drawable/my_account_icon_white"
+            android:title="Profile"
+            android:visible="false" />
+        <item
+            android:id="@+id/mnuFavorite"
+            android:icon="@drawable/favorite"
+            android:title="Favorte"
+            android:visible="false" />
+        <item
+            android:id="@+id/mnuLogout"
+            android:title="Logout"
+            android:visible="false" />
+
+
+    </group>
+
+    <!--<item android:title="Others">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_settings"-->
+    <!--android:checkable="true"-->
+    <!--android:checked="true"-->
+    <!--android:title="Settings" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_about"-->
+    <!--android:icon="@android:drawable/ic_menu_send"-->
+    <!--android:title="About" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+
+</menu>

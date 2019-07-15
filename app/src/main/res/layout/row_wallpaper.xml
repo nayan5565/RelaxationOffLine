@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp207"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp5"
+    android:background="#F4F4F4">
+
+    <ImageView
+        android:id="@+id/imgWall"
+        android:layout_width="@dimen/dp207"
+        android:layout_height="@dimen/dp200"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp12"
+        android:layout_below="@+id/imgWall"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp12"
+        android:background="@drawable/eye" />
+
+    <TextView
+        android:id="@+id/tvViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgWall"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_toRightOf="@+id/imgView"
+        android:text="2.3K" />
+
+    <TextView
+        android:id="@+id/tvShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgWall"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="2.3K" />
+
+    <ImageView
+        android:id="@+id/imgCloud"
+        android:layout_width="@dimen/dp18"
+        android:layout_height="@dimen/dp18"
+        android:layout_below="@+id/imgWall"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_toLeftOf="@+id/tvShare"
+        android:background="@drawable/download_icon" />
+
+</RelativeLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="@drawable/sound_topbar">
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="5"
+            android:singleLine="true"
+            android:text="title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp25" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp20"
+            android:src="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp20"
+            android:src="@drawable/ic_close"
+            android:visibility="gone" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp35"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20" />
+
+    <LinearLayout
+        android:id="@+id/lnTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSetting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPlay"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="12"
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlay2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/dp52"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlay3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/dp55"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPlay4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/dp55"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textSize="@dimen/sp10"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40" />
+
+        <ImageView
+            android:id="@+id/imgPlay2"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp42" />
+
+        <ImageView
+            android:id="@+id/imgPlay3"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp45" />
+
+        <ImageView
+            android:id="@+id/imgPlay4"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp45" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp5"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10" />
+
+        <SeekBar
+            android:id="@+id/seekBar4"
+            android:layout_width="@dimen/dp75"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPlay5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/lnSeek"
+        android:layout_marginLeft="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:textSize="@dimen/sp10"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgPlay5"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+
+        android:layout_alignLeft="@+id/lnSeek"
+        android:layout_alignStart="@+id/lnSeek"
+        android:layout_below="@+id/tvPlay5" />
+
+    <SeekBar
+        android:id="@+id/seekBar5"
+        android:layout_width="@dimen/dp70"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPlay5"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp5" />
+
+    <LinearLayout
+        android:id="@+id/lnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:background="@drawable/play_round_button" />
+
+        <Button
+            android:id="@+id/btnFullScreen"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:layout_marginLeft="@dimen/dp50"
+            android:background="@drawable/auto_play" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBarSound"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/seekBarSound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnPlay"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>
