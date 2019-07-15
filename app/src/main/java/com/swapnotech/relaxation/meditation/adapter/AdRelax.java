@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.koushikdutta.ion.Ion;
+import com.squareup.picasso.Picasso;
 import com.swapnotech.relaxation.meditation.R;
 import com.swapnotech.relaxation.meditation.model.MWallpaperCat;
 import com.swapnotech.relaxation.meditation.tools.MyLog;
@@ -50,7 +51,9 @@ public abstract class AdRelax extends RecyclerView.Adapter<AdRelax.MyViewHolder>
         MWallpaperCat recipe = recipes.get(position);
         if (recipe != null) {
             holder.tvTitle.setText(recipe.getCategoryTitle());
-            holder.img.setBackgroundResource(recipe.getImage());
+            Picasso.with(context).load(recipe.getImage()).into(holder.img);
+//            holder.img.setBackgroundResource(recipe.getImage());
+//            Ion.with(holder.img).placeholder(recipe.getImage());
 //            if (recipe.getCategoryThumb() != null || !recipe.getCategoryThumb().equals("") || !recipe.getCategoryThumb().equals("null"))
 //                Ion.with(holder.img)
 //                        .placeholder(R.drawable.placeholder_image)
@@ -58,9 +61,10 @@ public abstract class AdRelax extends RecyclerView.Adapter<AdRelax.MyViewHolder>
 //                        .load(recipe.getCategoryThumb());
 //                Picasso.with(context).load(recipe.getCategoryThumb()).placeholder(R.drawable.placeholder_image).into(holder.img);
 
-        } else {
-            holder.img.setImageResource(R.drawable.placeholder_image);
         }
+//        else {
+//            holder.img.setImageResource(R.drawable.placeholder_image);
+//        }
 
     }
 

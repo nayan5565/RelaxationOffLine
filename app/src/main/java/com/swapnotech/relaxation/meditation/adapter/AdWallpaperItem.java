@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.koushikdutta.ion.Ion;
+import com.squareup.picasso.Picasso;
 import com.swapnotech.relaxation.meditation.R;
 import com.swapnotech.relaxation.meditation.model.MItems;
 import com.swapnotech.relaxation.meditation.tools.MyLog;
@@ -50,7 +51,8 @@ public abstract class AdWallpaperItem extends RecyclerView.Adapter<AdWallpaperIt
         recipe = recipes.get(position);
         holder.tvTitle.setText(recipe.getTitle());
         holder.tvMail.setText(recipe.getWallpaper().size()+"");
-        holder.imgThumb.setBackgroundResource(recipe.getImage());
+//        holder.imgThumb.setBackgroundResource(recipe.getImage());
+        Picasso.with(context).load(recipe.getImage()).into(holder.imgThumb);
 
 ////        Picasso.with(context).load(Global.API_BASE_BACKEND + recipe.getThumb()).placeholder(R.drawable.placeholder).into(holder.imgThumb);
 //        if (recipe.getThumb() != null && !recipe.getThumb().equals("") && !recipe.getThumb().equals("null")) {

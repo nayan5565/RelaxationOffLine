@@ -71,7 +71,8 @@ public abstract class AdWallpaper extends RecyclerView.Adapter<AdWallpaper.MyVie
         mWallpaper = flashArrayList.get(position);
         holder.tvShare.setText(mWallpaper.getShare());
         holder.tvViews.setText(mWallpaper.getView());
-        holder.imgThumb.setBackgroundResource(mWallpaper.getImage());
+//        holder.imgThumb.setBackgroundResource(mWallpaper.getImage());
+        Picasso.with(context).load(mWallpaper.getImage()).into(holder.imgThumb);
 
 //        holder.tvShrtDes.setText(recipe.getS());
 //        Utils.setFont("AvenirNext-Regular", holder.tvTitle);
